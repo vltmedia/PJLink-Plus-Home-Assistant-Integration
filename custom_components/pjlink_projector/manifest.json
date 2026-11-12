@@ -1,0 +1,17 @@
+{
+  "domain": "pjlink_projector",
+  "name": "PJLink Plus",
+  "codeowners": [
+    "@vltmedia"
+  ],
+  "config_flow": true,
+  "dependencies": [
+    "network"
+  ],
+  "documentation": "https://vltmedia.github.io/PJLinkPlus/",
+  "integration_type": "device",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/vltmedia/PJLinkPlus/issues",
+  "requirements": [],
+  "version": "1.0.0"
+}

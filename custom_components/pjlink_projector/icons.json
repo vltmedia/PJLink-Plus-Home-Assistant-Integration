@@ -1,0 +1,34 @@
+{
+  "entity": {
+    "remote": { "remote": { "default": "mdi:remote" } },
+    "select": { "input": { "default": "mdi:video-input-hdmi" } },
+    "switch": {
+      "video_mute": { "default": "mdi:projector", "state": { "on": "mdi:projector-off" } },
+      "audio_mute": { "default": "mdi:volume-high", "state": { "on": "mdi:volume-off" } },
+      "freeze": { "default": "mdi:play", "state": { "on": "mdi:pause" } }
+    },
+    "button": {
+      "volume_up": { "default": "mdi:volume-plus" },
+      "volume_down": { "default": "mdi:volume-minus" },
+      "mic_volume_up": { "default": "mdi:microphone-plus" },
+      "mic_volume_down": { "default": "mdi:microphone-minus" }
+    },
+    "sensor": {
+      "power_status": { "default": "mdi:power" },
+      "lamp_hours": { "default": "mdi:lightbulb-on-outline" },
+      "lamp_n_hours": { "default": "mdi:lightbulb-on-outline" },
+      "filter_hours": { "default": "mdi:air-filter" },
+      "input_resolution": { "default": "mdi:monitor-screenshot" },
+      "recommended_resolution": { "default": "mdi:monitor-screenshot" },
+      "fan_status": { "default": "mdi:fan" },
+      "lamp_status": { "default": "mdi:lightbulb-alert-outline" },
+      "temperature_status": { "default": "mdi:thermometer-alert" },
+      "cover_status": { "default": "mdi:projector-screen-outline" },
+      "filter_status": { "default": "mdi:air-filter" },
+      "other_status": { "default": "mdi:alert-circle-outline" }
+    }
+  },
+  "services": {
+    "send_command": { "service": "mdi:console-line" }
+  }
+}

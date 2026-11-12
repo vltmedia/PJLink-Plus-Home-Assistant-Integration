@@ -1,0 +1,25 @@
+send_command:
+  target:
+    entity:
+      integration: pjlink_projector
+      domain: media_player
+  fields:
+    command:
+      required: true
+      example: "POWR"
+      selector:
+        text:
+    parameter:
+      required: false
+      default: "?"
+      example: "1"
+      selector:
+        text:
+    pjlink_class:
+      required: false
+      default: 1
+      selector:
+        select:
+          options:
+            - "1"
+            - "2"

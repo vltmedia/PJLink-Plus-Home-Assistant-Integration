@@ -1,0 +1,164 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Add a PJLink projector",
+        "description": "Search the local network for projectors, or enter an address yourself.",
+        "menu_options": {
+          "scan": "Search the network",
+          "manual": "Enter an address"
+        }
+      },
+      "pick": {
+        "title": "Projectors found",
+        "data": {
+          "device": "Projector"
+        }
+      },
+      "auth": {
+        "title": "Password required",
+        "description": "The projector at {host} has PJLink authentication switched on.",
+        "data": {
+          "password": "PJLink password"
+        }
+      },
+      "manual": {
+        "title": "Projector address",
+        "description": "PJLink must be enabled in the projector's network settings. Leave the password empty if PJLink authentication is off.",
+        "data": {
+          "host": "Host name or IP address",
+          "port": "Port",
+          "password": "PJLink password"
+        },
+        "data_description": {
+          "port": "PJLink uses TCP port 4352 unless the projector says otherwise."
+        }
+      },
+      "reauth_confirm": {
+        "title": "Password rejected",
+        "description": "{name} ({host}) no longer accepts the stored PJLink password.",
+        "data": {
+          "password": "PJLink password"
+        }
+      },
+      "reconfigure": {
+        "title": "Change projector connection",
+        "data": {
+          "host": "Host name or IP address",
+          "port": "Port",
+          "password": "PJLink password"
+        }
+      }
+    },
+    "progress": {
+      "scan": "Searching the network for PJLink projectors. This takes a few seconds."
+    },
+    "error": {
+      "cannot_connect": "Could not connect. Check the address, that the projector has network standby enabled, and that PJLink is switched on.",
+      "invalid_auth": "The projector rejected that password.",
+      "password_required": "This projector requires a PJLink password.",
+      "not_pjlink": "Something answered at that address, but it does not speak PJLink.",
+      "no_devices_found": "No new projectors were found. Enter the address manually.",
+      "unknown": "Unexpected error. See the log for details."
+    },
+    "abort": {
+      "already_configured": "This projector is already set up.",
+      "reauth_successful": "Password updated.",
+      "reconfigure_successful": "Connection updated."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "scan_interval": "Polling interval"
+        },
+        "data_description": {
+          "scan_interval": "How often to ask the projector for its status. Warm-up and cool-down are always polled every 3 seconds."
+        }
+      }
+    }
+  },
+  "entity": {
+    "remote": {
+      "remote": { "name": "Remote" }
+    },
+    "select": {
+      "input": { "name": "Input" }
+    },
+    "switch": {
+      "video_mute": { "name": "Picture mute" },
+      "audio_mute": { "name": "Sound mute" },
+      "freeze": { "name": "Freeze" }
+    },
+    "button": {
+      "volume_up": { "name": "Volume up" },
+      "volume_down": { "name": "Volume down" },
+      "mic_volume_up": { "name": "Microphone volume up" },
+      "mic_volume_down": { "name": "Microphone volume down" }
+    },
+    "binary_sensor": {
+      "problem": { "name": "Problem" }
+    },
+    "sensor": {
+      "power_status": {
+        "name": "Power status",
+        "state": {
+          "standby": "Standby",
+          "on": "On",
+          "cooling": "Cooling down",
+          "warming": "Warming up"
+        }
+      },
+      "lamp_hours": { "name": "Lamp hours" },
+      "lamp_n_hours": { "name": "Lamp {number} hours" },
+      "filter_hours": { "name": "Filter hours" },
+      "input_resolution": { "name": "Input resolution" },
+      "recommended_resolution": { "name": "Recommended resolution" },
+      "fan_status": {
+        "name": "Fan status",
+        "state": { "ok": "OK", "warning": "Warning", "error": "Error" }
+      },
+      "lamp_status": {
+        "name": "Lamp status",
+        "state": { "ok": "OK", "warning": "Warning", "error": "Error" }
+      },
+      "temperature_status": {
+        "name": "Temperature status",
+        "state": { "ok": "OK", "warning": "Warning", "error": "Error" }
+      },
+      "cover_status": {
+        "name": "Cover status",
+        "state": { "ok": "OK", "warning": "Warning", "error": "Error" }
+      },
+      "filter_status": {
+        "name": "Filter status",
+        "state": { "ok": "OK", "warning": "Warning", "error": "Error" }
+      },
+      "other_status": {
+        "name": "Other status",
+        "state": { "ok": "OK", "warning": "Warning", "error": "Error" }
+      }
+    }
+  },
+  "services": {
+    "send_command": {
+      "name": "Send PJLink command",
+      "description": "Sends any PJLink command to the projector and returns its answer.",
+      "fields": {
+        "command": {
+          "name": "Command",
+          "description": "Four-letter PJLink command, for example POWR, INPT, AVMT, LAMP or FREZ."
+        },
+        "parameter": {
+          "name": "Parameter",
+          "description": "Value to set, or ? to query."
+        },
+        "pjlink_class": {
+          "name": "PJLink class",
+          "description": "1 for the original commands, 2 for the Class 2 additions (FREZ, SVOL, IRES...)."
+        }
+      }
+    }
+  }
+}
