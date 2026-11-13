@@ -5,7 +5,7 @@ A Home Assistant integration that finds and controls projectors over
 built into most projectors from Epson, Panasonic, Sony, NEC/Sharp, Optoma,
 BenQ, Christie, Maxell/Hitachi, Casio and others.
 
-**Documentation: <https://vltmedia.github.io/PJLinkPlus/>**
+**Documentation: <https://vltmedia.github.io/PJLink-Plus-Home-Assistant-Integration/>**
 
 ## What it is
 
@@ -38,7 +38,7 @@ does not conflict with the built-in one, and it needs no extra Python packages.
 
 PJLink itself has no commands for the on-screen menu, arrow keys, keystone,
 focus, zoom or absolute volume, so no PJLink integration can offer those. See
-[What PJLink cannot do](https://vltmedia.github.io/PJLinkPlus/limitations/).
+[What PJLink cannot do](https://vltmedia.github.io/PJLink-Plus-Home-Assistant-Integration/limitations/).
 
 ## Install
 
@@ -47,7 +47,7 @@ Needs Home Assistant 2025.1 or newer.
 **With HACS**
 
 1. HACS → menu → **Custom repositories** → add
-   `https://github.com/vltmedia/PJLinkPlus` as an **Integration**.
+   `https://github.com/vltmedia/PJLink-Plus-Home-Assistant-Integration` as an **Integration**.
 2. Download **PJLink Plus** and restart Home Assistant.
 
 **Manually**
@@ -63,18 +63,18 @@ Needs Home Assistant 2025.1 or newer.
    and choose **PJLink Plus**.
 3. Choose **Search the network**, or enter the projector's address.
 
-More detail: [Installation](https://vltmedia.github.io/PJLinkPlus/installation/)
-and [Adding a projector](https://vltmedia.github.io/PJLinkPlus/setup/).
+More detail: [Installation](https://vltmedia.github.io/PJLink-Plus-Home-Assistant-Integration/installation/)
+and [Adding a projector](https://vltmedia.github.io/PJLink-Plus-Home-Assistant-Integration/setup/).
 
 ## Documentation
 
 | | |
 | --- | --- |
-| [Entities](https://vltmedia.github.io/PJLinkPlus/entities/) | Every entity and what it needs |
-| [Remote and services](https://vltmedia.github.io/PJLinkPlus/commands/) | Command names, raw commands, PJLink reference |
-| [Automation examples](https://vltmedia.github.io/PJLinkPlus/examples/) | Ready-to-adapt YAML |
-| [Troubleshooting](https://vltmedia.github.io/PJLinkPlus/troubleshooting/) | Common problems and debug logging |
-| [Development](https://vltmedia.github.io/PJLinkPlus/development/) | Layout, tests, simulated projector |
+| [Entities](https://vltmedia.github.io/PJLink-Plus-Home-Assistant-Integration/entities/) | Every entity and what it needs |
+| [Remote and services](https://vltmedia.github.io/PJLink-Plus-Home-Assistant-Integration/commands/) | Command names, raw commands, PJLink reference |
+| [Automation examples](https://vltmedia.github.io/PJLink-Plus-Home-Assistant-Integration/examples/) | Ready-to-adapt YAML |
+| [Troubleshooting](https://vltmedia.github.io/PJLink-Plus-Home-Assistant-Integration/troubleshooting/) | Common problems and debug logging |
+| [Development](https://vltmedia.github.io/PJLink-Plus-Home-Assistant-Integration/development/) | Layout, tests, simulated projector |
 
 The documentation source is in [`docs/`](docs/) and is published by the
 [Docs workflow](.github/workflows/docs.yml).

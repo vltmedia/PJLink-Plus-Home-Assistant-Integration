@@ -5,7 +5,7 @@ PJLink Plus needs Home Assistant 2025.1 or newer.
 ## With HACS
 
 1. Open **HACS**, choose the menu in the top right, then **Custom repositories**.
-2. Add `https://github.com/vltmedia/PJLinkPlus` with the type **Integration**.
+2. Add `https://github.com/vltmedia/PJLink-Plus-Home-Assistant-Integration` with the type **Integration**.
 3. Search for **PJLink Plus** in HACS and download it.
 4. Restart Home Assistant.
 

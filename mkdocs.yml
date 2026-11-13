@@ -1,8 +1,8 @@
 site_name: PJLink Plus
 site_description: Find and control PJLink projectors from Home Assistant.
-site_url: https://vltmedia.github.io/PJLinkPlus/
-repo_url: https://github.com/vltmedia/PJLinkPlus
-repo_name: vltmedia/PJLinkPlus
+site_url: https://vltmedia.github.io/PJLink-Plus-Home-Assistant-Integration/
+repo_url: https://github.com/vltmedia/PJLink-Plus-Home-Assistant-Integration
+repo_name: vltmedia/PJLink-Plus-Home-Assistant-Integration
 edit_uri: edit/main/docs/
 strict: true
 

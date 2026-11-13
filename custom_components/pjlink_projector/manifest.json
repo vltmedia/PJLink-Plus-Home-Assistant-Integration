@@ -8,10 +8,10 @@
   "dependencies": [
     "network"
   ],
-  "documentation": "https://vltmedia.github.io/PJLinkPlus/",
+  "documentation": "https://vltmedia.github.io/PJLink-Plus-Home-Assistant-Integration/",
   "integration_type": "device",
   "iot_class": "local_polling",
-  "issue_tracker": "https://github.com/vltmedia/PJLinkPlus/issues",
+  "issue_tracker": "https://github.com/vltmedia/PJLink-Plus-Home-Assistant-Integration/issues",
   "requirements": [],
   "version": "1.0.0"
 }
